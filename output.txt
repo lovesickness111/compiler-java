@@ -1,0 +1,70 @@
+Contents of file:
+void main() {
+    int a [10];
+    int i ;
+    int max = a [ 0 ] ;
+    for ( i = 1; i < 10; i=i+1) {
+        if  (a [ i ] > max)max = a [ i ] ;
+    }
+}
+
+After eliminating:
+void main() {     int a [10];     int i ;     int max = a [ 0 ] ;     for ( i = 1; i < 10; i=i+1) {         if  (a [ i ] > max)max = a [ i ] ;     } } 
+Process:
+void keyword void_keyword
+main identifier
+( separator left_round_bracket
+) separator right_round_bracket
+{ separator left_curly_bracket
+int keyword int_keyword
+a identifier
+[ separator left_square_bracket
+10 int_literal
+] separator right_square_bracket
+; separator semicolon
+int keyword int_keyword
+i identifier
+; separator semicolon
+int keyword int_keyword
+max identifier
+= operator assignment_operator
+a identifier
+[ separator left_square_bracket
+0 int_literal
+] separator right_square_bracket
+; separator semicolon
+for keyword for_keyword
+( separator left_round_bracket
+i identifier
+= operator assignment_operator
+1 int_literal
+; separator semicolon
+i identifier
+< operator less_operator
+10 int_literal
+; separator semicolon
+i identifier
+= operator assignment_operator
+i identifier
++ operator plus_operator
+1 int_literal
+) separator right_round_bracket
+{ separator left_curly_bracket
+if keyword if_keyword
+( separator left_round_bracket
+a identifier
+[ separator left_square_bracket
+i identifier
+] separator right_square_bracket
+> operator greater_operator
+max identifier
+) separator right_round_bracket
+max identifier
+= operator assignment_operator
+a identifier
+[ separator left_square_bracket
+i identifier
+] separator right_square_bracket
+; separator semicolon
+} separator right_curly_bracket
+} separator right_curly_bracket
